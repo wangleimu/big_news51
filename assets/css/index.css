@@ -1,0 +1,14 @@
+.layui-footer{
+  text-align: center;
+  font-size: 12px;
+  background-color: #f2f3f8;
+}
+#logo{
+  background: url('../images/logo.png') no-repeat center;
+}
+.iconfont{
+  margin-right: 8px;
+}
+.layui-icon{
+  margin-right: 8px;
+}
