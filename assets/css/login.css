@@ -1,53 +1,69 @@
-*{
+* {
   margin: 0;
   padding: 0;
+  /* height: 100%;
+  width: 100%; */
 }
+
 html,
-body{
-  /* width: 100%; */
+body {
+  /* height: 100%; */
+  /* 高度设为100vh，可以占满整个屏幕 */
   height: 100vh;
-  background:url('../images/login_bg.jpg') no-repeat center;
+  background-image: url('/assets/images/login_bg.jpg');
+  /* cover contain 区别？ */
+  /* cover 以短边为准 */
+  /* contain 以长边为准 */
   background-size: cover;
 }
-.login-reg-box{
+
+.login-reg-box {
   width: 400px;
   height: 320px;
-  position:absolute;
+  position: absolute;
   top: 0;
   right: 0;
-  left: 0;
   bottom: 0;
+  left: 0;
   margin: auto;
   background-color: #fff;
   border-radius: 3px;
 }
-.login-reg-box h4{
+
+.login-reg-box h4 {
   height: 60px;
-  display: flex;
-  justify-content:center;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  text-align: center;
+  line-height: 60px;
 }
-.reg-wrap{
+
+.reg-wrap {
   display: none;
 }
 
-.layui-form{
+.layui-form {
   padding: 20px;
 }
 
-.layui-form:nth-last-child(1){
-  text-align:right;
-  font-size: 12px;
+/* 取到最后一个 表单项 */
+/* flex */
+.layui-form:nth-last-child(1) {
+  text-align: right;
+  font-size: 13px;
 }
 
-.layui-form-item{
+.layui-form-item {
   position: relative;
 }
-.layui-form-item i{
+
+.layui-form-item i {
   position: absolute;
-  left:10px;
+  left: 10px;
   top: 10px;
 }
-.layui-input{
+
+.layui-form-item input {
   padding-left: 30px;
 }

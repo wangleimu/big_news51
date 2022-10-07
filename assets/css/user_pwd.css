@@ -1,14 +1,14 @@
 html,
-body{
-margin: 0;
-padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-  padding: 15px;
+body {
   background-color: #f2f3f5;
+  padding: 10px;
 }
 
-.layui-form{
-  width: 500px;
+.layui-form {
+  width: 400px;
 }

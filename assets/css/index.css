@@ -1,23 +1,17 @@
 .layui-footer {
   text-align: center;
-  font-size: 12px;
-  background-color: #f2f3f8;
+  font-size: 14px;
+  background-color: #23262e !important;
+  color: #fff;
 }
 
-#logo {
-  background: url('../images/logo.png') no-repeat center;
-}
-
-.iconfont {
-  margin-right: 8px;
-}
-
+.iconfont,
 .layui-icon {
   margin-right: 8px;
 }
 
-.layui-body {
-  overflow: hidden;
+.layui-icon {
+  margin-left: 20px;
 }
 
 .layui-body div {
@@ -30,37 +24,44 @@ iframe {
   border: none;
 }
 
-.user-box{
+.layui-body {
+  overflow: hidden;
+}
+
+/* css 权重：深度选择器 /deep/ >>> :deep(类名) > !important > 行内样式 > id选择器 > class类选择器 > 标签选择器 > 属性选择器 > * */
+a {
+  transition: none !important;
+}
+
+.user-box {
   display: flex;
   height: 60px;
   align-items: center;
   justify-content: center;
-  
+  user-select: none;
 }
-.user-box .layui-nav-img{
+
+.user-box .layui-nav-img {
   width: 40px;
   height: 40px;
   display: none;
 }
-.user-box .text-avatar{
-  display: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.user-box .text-avatar {
   width: 40px;
   height: 40px;
   background-color: #cdcdcd;
-  color:black;
+  color: #fff;
   border-radius: 50%;
-  font-size: 18px;
-  margin-right: 10;
-  user-select: none;
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  margin-right: 10px;
+  display: none;
 }
-.user-box .tetx{
-  margin-left: 8px;
-  font-size: 12px;
-  user-select: none;
 
+.user-box .text {
+  font-size: 12px;
 }
 
